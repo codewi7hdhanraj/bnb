@@ -1,0 +1,616 @@
+/* ===========================
+   Basic CSS
+=========================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#faf8f2;
+
+}
+/* ===========================
+   Top Bar
+=========================== */
+
+.topbar{
+
+    width:100%;
+
+    height:35px;
+
+    background:#234d20;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:14px;
+
+}
+/* ===========================
+   Navbar
+=========================== */
+
+nav{
+
+    width:100%;
+
+    height:80px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0px 60px;
+
+    border-bottom:1px solid #ddd;
+
+}
+.back-button{
+
+    margin:20px 60px;
+}
+
+.back-button button{
+
+    background:#234d20;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+    font-size:16px;
+}
+
+.back-button button:hover{
+
+    background:#2d6d2b;
+}
+
+.logo img{
+
+    width:140px;
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:black;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+}
+
+.menu a:hover{
+
+    color:#234d20;
+
+}
+
+.active{
+
+    color:#234d20;
+
+}
+
+.icons{
+
+    display:flex;
+
+    gap:20px;
+
+    font-size:20px;
+
+}
+
+.icons a{
+
+    color:black;
+
+    text-decoration:none;
+
+}
+
+.icons i{
+
+    cursor:pointer;
+
+
+}
+.search-box{
+
+    display:none;
+
+    position:absolute;
+
+    top:90px;
+
+    right:50px;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:5px;
+
+    box-shadow:0px 0px 10px lightgray;
+
+    z-index:1000;
+}
+
+.search-box input{
+
+    width:250px;
+
+    height:40px;
+
+    padding-left:10px;
+
+    border:1px solid gray;
+
+    outline:none;
+}
+/* ===========================
+   About Banner
+=========================== */
+
+.about-banner{
+
+    width:100%;
+
+    min-height:500px;
+
+    background:#f8f4e8;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.left{
+
+    width:45%;
+
+}
+
+.left h1{
+
+    font-size:60px;
+
+    color:#234d20;
+
+    margin-bottom:20px;
+
+}
+
+.left h2{
+
+    font-size:42px;
+
+    color:#234d20;
+
+    margin-bottom:20px;
+
+    line-height:55px;
+
+}
+
+.left p{
+
+    color:#555;
+
+    line-height:28px;
+
+    margin-bottom:30px;
+
+}
+
+.left button{
+
+    width:180px;
+
+    height:50px;
+
+    background:#234d20;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.left button:hover{
+
+    background:#2f6d2c;
+
+}
+
+.right{
+
+    width:50%;
+
+    text-align:right;
+
+}
+
+.right img{
+
+    width:100%;
+
+    max-width:550px;
+
+}/* Our Story */
+
+.story{
+
+    width:100%;
+
+    padding:70px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:#faf8f2;
+}
+
+.story-left{
+
+    width:45%;
+}
+
+.story-left h4{
+
+    color:#2d5a27;
+
+    margin-bottom:15px;
+}
+
+.story-left h2{
+
+    font-size:40px;
+
+    color:#234d20;
+
+    margin-bottom:25px;
+}
+
+.story-left p{
+
+    color:#555;
+
+    line-height:28px;
+
+    margin-bottom:18px;
+}
+
+
+
+/* Mission Vision */
+
+.story-right{
+
+    width:48%;
+
+    display:flex;
+
+    justify-content:space-between;
+}
+
+.box{
+
+    width:48%;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+
+    transition:0.3s;
+}
+
+.box:hover{
+
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.box img{
+
+    width:70px;
+
+    height:70px;
+
+    margin-bottom:20px;
+}
+
+.box h3{
+
+    color:#234d20;
+
+    margin-bottom:15px;
+}
+
+.box p{
+
+    color:#666;
+
+    line-height:25px;
+}
+/* ===========================
+      OUR VALUES
+=========================== */
+
+.values{
+
+    width:100%;
+
+    padding:60px;
+
+    background:#faf8f2;
+
+    text-align:center;
+}
+
+.values h2{
+
+    color:#234d20;
+
+    margin-bottom:40px;
+
+    font-size:34px;
+}
+
+.values-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+}
+
+.value-box{
+
+    width:23%;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    transition:0.3s;
+}
+
+.value-box:hover{
+
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.value-box img{
+
+    width:65px;
+
+    height:65px;
+
+    margin-bottom:15px;
+}
+
+.value-box h3{
+
+    color:#234d20;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}
+
+.value-box p{
+
+    color:#666;
+
+    line-height:24px;
+
+    font-size:15px;
+}
+
+
+
+/* ===========================
+      GREEN BANNER
+=========================== */
+
+.green-banner{
+
+    width:100%;
+
+    background:#2b5b22;
+
+    margin-top:50px;
+
+    padding:30px 60px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.banner-text{
+
+    width:65%;
+}
+
+.banner-text h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.banner-text p{
+
+    color:#f2f2f2;
+
+    font-size:17px;
+
+    line-height:28px;
+}
+
+.banner-image{
+
+    width:30%;
+
+    text-align:right;
+}
+
+.banner-image img{
+
+    width:220px;
+}
+footer{
+
+    width:100%;
+
+    background:#234d20;
+
+    color:white;
+}
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:50px 60px;
+}
+
+.footer-box{
+
+    width:23%;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.footer-logo{
+
+    width:140px;
+
+    margin-bottom:20px;
+}
+
+.footer-box h3{
+
+    margin-bottom:20px;
+}
+
+.footer-box a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+}
+
+.footer-box a:hover{
+
+    color:gold;
+}
+
+.footer-box p{
+
+    margin-bottom:12px;
+
+    line-height:25px;
+}
+
+.social{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+footer hr{
+
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.copyright{
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:15px;
+}

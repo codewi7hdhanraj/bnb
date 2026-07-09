@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- Top Bar -->
+
+<div class="topbar">
+
+    🌿 FREE SHIPPING ON ORDERS ABOVE ₹499
+
+</div>
+
+
+
+<!-- Navbar -->
+
+<nav>
+
+    <div class="logo">
+
+        <img src="images/logo.png">
+
+    </div>
+
+    <div class="menu">
+
+        <a href="bloom.html">HOME</a>
+
+        <a href="products.html">PRODUCTS</a>
+
+        <a href="about.html">ABOUT US</a>
+
+        <a href="blogs.html">BLOGS</a>
+
+        <a href="contact.html" class="active">CONTACT US</a>
+
+    </div>
+
+
+    <div class="icons">
+
+        <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
+
+        <a href="login.html">
+
+            <i class="fa-regular fa-user"></i>
+
+        </a>
+
+        <a href="cart.html">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- Search -->
+
+<div class="search-box" id="searchBox">
+
+    <input
+    type="text"
+    placeholder="Search..."
+    id="searchInput">
+
+</div>
+
+
+
+<!-- Back Button -->
+
+<div class="back-button">
+
+    <button onclick="history.back()">
+
+        ← Back
+
+    </button>
+
+</div>
+
+
+
+<!-- Banner -->
+
+<section class="contact-banner">
+
+    <div class="left">
+
+        <h1>Contact Us</h1>
+
+        <h2>We'd love to hear from you!</h2>
+
+        <p>
+
+            Have a question about our products?
+
+            Our team is here to help.
+
+            Reach out anytime.
+
+        </p>
+
+    </div>
+
+
+    <div class="right">
+
+        <img src="images/contact-banner.png">
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+
+<section class="contact-section">
+
+    <!-- Left Side -->
+
+    <div class="contact-info">
+
+        <h2>GET IN TOUCH</h2>
+
+        <div class="info-box">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <h3>OUR ADDRESS</h3>
+
+                <p>
+                    Bloom & Bay Company
+                    <br>
+                    123 Green Valley
+                    <br>
+                    Pune, Maharashtra
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+
+                <h3>PHONE NUMBER</h3>
+
+                <p>
+                    +91 98765 43210
+                    <br>
+                    Mon - Sat
+                    <br>
+                    9:00 AM - 6:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+
+                <h3>EMAIL ADDRESS</h3>
+
+                <p>
+
+                    support@bloombay.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <div>
+
+                <h3>WORKING HOURS</h3>
+
+                <p>
+
+                    Monday - Saturday
+
+                    <br>
+
+                    9 AM - 6 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <div>
+
+                <h3>ORDER SUPPORT</h3>
+
+                <p>
+
+                    Need help with your order?
+
+                    <br>
+
+                    Contact our support team.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Right Side -->
+
+    <div class="contact-form">
+
+        <h2>SEND US A MESSAGE</h2>
+
+        <form id="contactForm">
+
+            <div class="row">
+
+                <input type="text" id="name" placeholder="Your Name">
+
+                <input type="email" id="email" placeholder="Email Address">
+
+            </div>
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <input type="text" id="subject" placeholder="Subject">
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="button" onclick="sendMessage()">
+
+                SEND MESSAGE
+
+            </button>
+
+        </form>
+
+        <p class="privacy">
+
+            ✔ We respect your privacy.
+
+        </p>
+
+    </div>
+
+</section>
+<!-- Features Section -->
+
+<section class="features">
+
+    <div class="feature-box">
+
+        <img src="images/organic.png">
+
+        <h3>100% ORGANIC</h3>
+
+        <p>
+            Pure, natural and chemical-free products.
+        </p>
+
+    </div>
+
+    <div class="feature-box">
+
+        <img src="images/lab.png">
+
+        <h3>LAB TESTED</h3>
+
+        <p>
+            Carefully tested for purity and quality.
+        </p>
+
+    </div>
+
+    <div class="feature-box">
+
+        <img src="images/leaf.png">
+
+        <h3>NO CHEMICALS</h3>
+
+        <p>
+            We never use harmful chemicals or additives.
+        </p>
+
+    </div>
+
+    <div class="feature-box">
+
+        <img src="images/heart.png">
+
+        <h3>HEALTHY FOR LIFE</h3>
+
+        <p>
+            Products that support your wellness naturally.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="footer">
+
+        <div class="footer-box">
+
+            <img src="images/logo-white.png" class="footer-logo">
+
+            <p>
+
+                Pure By Nature.
+
+                <br>
+
+                Trusted By You.
+
+            </p>
+
+            <div class="social">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="blogs.html">Blogs</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Our Products</h3>
+
+            <a href="#">Turmeric Powder</a>
+
+            <a href="#">Kesar</a>
+
+            <a href="#">Honey</a>
+
+            <a href="#">Mangoes</a>
+
+            <a href="#">Mixed Nuts</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p>📞 +91 98765 43210</p>
+
+            <p>📧 support@bloombay.com</p>
+
+            <p>
+
+                123 Green Valley,
+
+                Pune,
+
+                Maharashtra
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        © 2026 Bloom & Bay Company. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+</body>
+<script src="contactscript.js"></script>
+
+</html>

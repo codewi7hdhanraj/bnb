@@ -77,12 +77,21 @@
     border: 2px solid #f80;
 
  }
+ .txt a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.txt a:hover{
+    color: green;
+}
  .nav-cart{
     font-size:1.50rem ;
     font-weight: 70;
+    
  }
- 
-
  .main-section{
     
     width:100%;
@@ -551,11 +560,18 @@
     color:white;
 
     text-align:center;
-}
+
+    margin-bottom: 10px;
+    }
 
 .newsletter p{
 
-    margin:15px 0 30px;
+    margin:10px 0 30px;
+}
+
+.newsletter h2{
+    font-size: 20px;
+    margin-top:-60px;
 }
 
 .newsletter input{
@@ -566,14 +582,14 @@
 
     padding-left:10px;
 
-    border:none;
+    border:none;    
 }
 
 .newsletter button{
 
-    width:130px;
+    width:90px;
 
-    height:45px;
+    height:30px;
 
     background:#f4b400;
 

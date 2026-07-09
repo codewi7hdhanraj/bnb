@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Top Bar -->
+
+<div class="topbar">
+
+    <p>🌿 FREE SHIPPING ON ORDERS ABOVE ₹499</p>
+
+</div>
+
+
+<!-- Navbar -->
+
+<nav>
+
+    <div class="logo">
+
+        <img src="images/logo.png">
+
+    </div>
+
+    <div class="menu">
+
+        <a href="bloom.html">HOME</a>
+
+        <a href="products.html">PRODUCTS</a>
+
+        <a href="about.html" class="active">ABOUT US</a>
+
+        <a href="blogs.html">BLOGS</a>
+
+        <a href="contact.html">CONTACT US</a>
+
+    </div>
+
+    <div class="icons">
+
+    <!-- Search -->
+
+    <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
+
+    <!-- User -->
+
+    <a href="login.html">
+
+        <i class="fa-regular fa-user"></i>
+     
+    </a>
+
+    <!-- Cart -->
+
+    <a href="cart.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+    </a>
+
+</div>
+
+
+<!-- Search Box -->
+
+<div class="search-box" id="searchBox">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Products..."
+        onkeyup="searchProducts()">
+
+</div>
+
+</nav>
+<div class="back-button">
+
+    <button onclick="history.back()">
+
+        ← Back
+
+    </button>
+
+</div>
+
+
+<!-- About Banner -->
+
+<section class="about-banner">
+
+    <div class="left">
+
+        <h1>About Us</h1>
+
+        <h2>Pure by Nature.<br>Trusted by You.</h2>
+
+        <p>
+            At Bloom & Bay, we are passionate about bringing
+            the goodness of nature to your everyday life.
+            Every product is carefully selected and packed
+            with love.
+        </p>
+
+        <a href="products.html">
+            <button>OUR PRODUCTS</button>
+        </a>
+
+    </div>
+
+    <div class="right">
+
+        <img src="images/about-banner.png">
+
+    </div>
+
+</section>
+<!-- Our Story -->
+
+<section class="story">
+
+    <div class="story-left">
+
+        <h4>OUR STORY</h4>
+
+        <h2>Rooted In Nature,<br>Committed To You</h2>
+
+        <p>
+            Bloom & Bay was founded with one simple goal -
+            to make pure, natural and organic products
+            available for everyone.
+        </p>
+
+        <p>
+            We work directly with trusted farmers and
+            carefully choose every product before
+            delivering it to your home.
+        </p>
+
+        <p>
+            From selecting the best ingredients to eco-friendly
+            packaging, we believe every step should care
+            for both people and nature.
+        </p>
+
+    </div>
+
+
+    <div class="story-right">
+
+        <div class="box">
+
+            <img src="images/mission.png">
+
+            <h3>OUR MISSION</h3>
+
+            <p>
+                To provide healthy and high-quality organic
+                products that improve everyday life.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <img src="images/vision.png">
+
+            <h3>OUR VISION</h3>
+
+            <p>
+                To build a healthier future through natural,
+                chemical-free products.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Our Values -->
+
+<section class="values">
+
+    <h2>OUR VALUES</h2>
+
+    <div class="values-container">
+
+        <div class="value-box">
+
+            <img src="images/organic.png" alt="">
+
+            <h3>100% ORGANIC</h3>
+
+            <p>
+                All our products are naturally grown
+                without harmful chemicals.
+            </p>
+
+        </div>
+
+        <div class="value-box">
+
+            <img src="images/lab.png" alt="">
+
+            <h3>LAB TESTED</h3>
+
+            <p>
+                Every product is carefully checked
+                before reaching you.
+            </p>
+
+        </div>
+
+        <div class="value-box">
+
+            <img src="images/leaf.png" alt="">
+
+            <h3>NO CHEMICALS</h3>
+
+            <p>
+                We never use harmful preservatives
+                or artificial chemicals.
+            </p>
+
+        </div>
+
+        <div class="value-box">
+
+            <img src="images/heart.png" alt="">
+
+            <h3>HEALTHY FOR LIFE</h3>
+
+            <p>
+                Healthy products that support
+                your family's well-being.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Green Banner -->
+
+<section class="green-banner">
+
+    <div class="banner-text">
+
+        <h2>GOOD FOR YOU, GOOD FOR NATURE.</h2>
+
+        <p>
+            Thank you for choosing Bloom & Bay.
+            Together, let's build a healthier and greener future.
+        </p>
+
+    </div>
+
+    <div class="banner-image">
+
+        <img src="images/plant.png" alt="Plant">
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer">
+
+        <div class="footer-box">
+
+            <img src="images/logo-white.png" class="footer-logo">
+
+            <p>
+                Pure By Nature,
+                Trusted By You.
+            </p>
+
+            <div class="social">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="blogs.html">Blogs</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Our Products</h3>
+
+            <a href="#">Turmeric Powder</a>
+
+            <a href="#">Kesar</a>
+
+            <a href="#">Honey</a>
+
+            <a href="#">Mangoes</a>
+
+            <a href="#">Dry Fruits</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p>📞 +91 98765 43210</p>
+
+            <p>✉ info@bloombay.com</p>
+
+            <p>
+                123 Green Valley,
+                Pune,
+                Maharashtra
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <div class="copyright">
+
+        © 2026 Bloom & Bay Company. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+</body>
+<script src="aboutscript.js"></script>
+</html>
