@@ -1,77 +1,47 @@
-// Search Box
+// Firebase imports
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-function showSearch(){
+// Your Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDOmh9H1LknGVc3OldPezjaE9nY72lsspc",
+  authDomain: "bloomnbay.firebaseapp.com",
+  projectId: "bloomnbay",
+  storageBucket: "bloomnbay.firebasestorage.app",
+  messagingSenderId: "175832064489",
+  appId: "1:175832064489:web:9ee689b344a6415a40ab78",
+};
 
-    var search = document.getElementById("searchBox");
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-    if(search.style.display=="block"){
+// Google Provider
+const provider = new GoogleAuthProvider();
 
-        search.style.display="none";
+// Login Button
+document
+  .getElementById("googleLogin")
+  .addEventListener("click", () => {
 
-    }
+    signInWithPopup(auth, provider)
+      .then((result) => {
 
-    else{
+        const user = result.user;
 
-        search.style.display="block";
+        alert("Welcome " + user.displayName);
 
-    }
+        // Redirect after login
+        window.location.href = "index.html";
 
-}
+      })
+      .catch((error) => {
+        console.log(error);
+        alert(error.message);
+      });
 
-
-
-// Show / Hide Password
-
-function showPassword(){
-
-    var pass=document.getElementById("password");
-
-    if(pass.type=="password"){
-
-        pass.type="text";
-
-    }
-
-    else{
-
-        pass.type="password";
-
-    }
-
-}
-
-
-
-// Login Validation
-
-function loginUser(){
-
-    var email=document.getElementById("email").value;
-
-    var password=document.getElementById("password").value;
-
-    if(email=="" || password==""){
-
-        alert("Please fill all fields.");
-
-    }
-
-    else{
-
-        alert("Login Successful!");
-
-        window.location="index.html";
-
-    }
-
-}
-function googleLogin(){
-
-    alert("Google Login is not available in this demo.");
-
-}
-function forgotPassword(){
-
-    alert("Password reset link will be sent to your email.");
-
-}
+});

@@ -58,7 +58,7 @@ nav{
 
 .logo img{
 
-    width:140px;
+    width:100px;
 
 }
 
@@ -161,17 +161,18 @@ nav{
 /* Banner */
 
 .contact-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
 
-    display:flex;
+    /* Background Image */
+    background-image: url("contactus.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    justify-content:space-between;
-
-    align-items:center;
-
-    background:#f8f4e8;
-
-    padding:60px;
-
+    min-height: 550px;
 }
 
 .left{

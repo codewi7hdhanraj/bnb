@@ -461,3 +461,18 @@ footer hr{
 
     font-size:15px;
 }
+
+.ourproducts-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+
+    /* Background Image */
+    background-image: url("ourproducts.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 550px;
+}
